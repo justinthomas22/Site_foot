@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.section {
+    padding: 1.25%;
+    text-align: center;
+}
+
+.section.gris {
+    background-color: #f0f0f0;
+}
+
+.pays-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.875%;
+}
+
+.pays {
+    text-align: center;
+    margin: 2.5%;
+}
+
+.pays img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pays img:hover{
+    transform:scale(1.1);
+}
+
+.joueur-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.875%;
+    flex-wrap: wrap; /* Permet aux éléments de passer à autre ligne */
+}
+
+.joueur {
+    text-align: center;
+    flex: 1 1 45%;
+    margin: 0.625%
+}
+
+.joueur img {
+    width: 11%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.625%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.joueur img:hover{
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 1.25%;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.9375%;
+    margin-top: 0.625%;
+}
+
+.footer .social-icons img {
+    width: 1.875%;
+    height: 1.875%;
+}
+
+.Texte_droite_c{
+    float: right;
+    margin-top: -0.625%;
+}
+
+.Texte_droite{
+    float: right;
+    margin-top: -0.625%;
+    margin: right -0.625%;
+}
+
+.Texte_gauche{
+    float: left;
+    margin-top: -0.625%;
+}
+
+.Perf{
+    text-align: center;
+}
+
+.img{
+    width: 31.25%;
+    height: 12.5%;
+}
+
+
+/* Styles pour le header et le footer */
+html {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+header {
+    background-color: black;
+    height: 20vh; /* Augmentation de la hauteur du header*/
+    width: 100%;
+}
+
+.image {
+    float: left;
+    width: 15%; /* Réduction de la largeur du logo */
+    height:80%; /* Réduction de la hauteur du logo */
+    margin-right: -15%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: white 3px solid;
+}
+
+.header_titre h1:hover {
+    transition: 1s;
+    scale: 1,2 ;
+}
+
+h1 {
+    margin-top: 0%;
+    color: white;
+}
+
+.menu .menu_ {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu_:hover {
+    background-color: #008000;
+}
+
+.langue {
+    width: 4%;
+    height: 2.5%;
+    float: right;
+    margin-right: 2%;
+}
+
+.content-all{
+    height: 100;
+    width: 70%;
+    margin: auto;
+}
+
+/* FOOTER */
+.custom-footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+}
+
+.custom-footer-text {
+    margin: 1% 0;
+    font-size: 100%;
+}
+
+.custom-social-icons {
+    margin-top: 1%;
+}
+
+.custom-social-link {
+    margin: 0 1%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8%;
+}
+
+.custom-social-link:hover {
+    color: #1e90ff;
+}
+
+.custom-social-icon {
+    width: 2.4%;
+    height: 2.4%;
+    vertical-align: middle;
+}
+
+/* Style pour cacher le menu par défaut */
+.menu nav {
+    opacity: 0;
+    visibility: hidden; /* Cache le menu par défaut */
+    transform: translateY(-20px); /* Déplace le menu au-dessus de l'écran */
+    transition: opacity 1.2s ease, transform 1.2s ease, visibility 0s 1.2s; /* Animations avec un délai pour la visibilité */
+}
+
+/* Style pour le bouton du menu hamburger */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2.5vh; /* Ajuste selon la taille souhaitée */
+    color: white;
+    margin-top: -2%;
+    margin-right: 1%;
+}
+
+/* Cacher la checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+/* Afficher le menu lorsque la checkbox est cochée */
+input[type=checkbox]:checked ~ .menu nav {
+    opacity: 1;
+    visibility: visible; /* Le menu devient visible */
+    transform: translateY(0); /* Le menu se déplace vers sa position normale */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition sans délai */
+}
+
+/* Style du menu */
+.menu_ {
+    display: block;
+    padding: 1.5vh 2vw; /* Ajuste selon la taille souhaitée */
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition fluide sur le changement de couleur */
+}
+
+/* Changer la couleur de fond du menu au survol */
+.menu_:hover {
+    background-color: green; /* Changer la couleur au survol */
+}
+
+/* Style spécifique du menu avec fond sombre */
+.menu_ {
+    background-color: #111;
+}
+
+/* Option pour élargir le menu */
+.menu_ {
+    width: 30%;
+    margin-left: 35%;
+}
+
+
+@media only screen and (max-width: 425px){
+
+    h1{
+        font-size: 90%;
+
+    }
+    .image{
+        width:20%;
+        height: 40%;
+    }
+    
+    .menu_{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 90%;
+    }
+
+    .custom-social-icon{
+        width: 10%;
+    }
+
+    .content-all{
+        width: 90%;
+        height: 100%;
+        margin-left:1%;
+        text-align: center;
+    }
+
+    .Texte_droite, .Texte_gauche{
+        float: none;
+    }
+
+    .joueur img {
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 0.625%;
+        object-fit: cover;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+
+}

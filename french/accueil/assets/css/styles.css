@@ -1,0 +1,298 @@
+html {
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: #f4f4f9;
+    color: #333;
+    width: 100%;
+}
+header {
+    background-color: black;
+    height: 20%;
+    /* Utilisation du pourcentage pour la hauteur */
+}
+.image {
+    float: left;
+    width: 20%;
+    /* Redimensionnement en pourcentage */
+    height: auto;
+    /* Hauteur automatique pour garder les proportions */
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: white 3px solid;
+}
+.header_titre h1:hover {
+    transition: 1s;
+    transform: scale(1.2);
+    /* Correction de la syntaxe du scale */
+}
+h1 {
+    margin-top: 0;
+    color: white;
+}
+.menu .menu_ {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    /* Utilisation de 'vw' pour un texte réactif */
+    padding: 5%;
+    text-transform: uppercase;
+}
+.menu_:hover {
+    background-color: #008000;
+}
+.langue {
+    width: 5%;
+    /* Largeur en pourcentage */
+    height: auto;
+    /* Hauteur automatique */
+    float: right;
+    margin-right: 2%;
+}
+.pele, .arbitre, .bresil, .frappe, .marche {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.img_pele, .img_bresil, .img_marche {
+    float: left;
+    margin-right: 2%;
+    height: 35vh;
+}
+.img_arbitre, .img_frappe {
+    float: right;
+    margin-left: 2%;
+}
+.separator {
+    border-top: black 2px solid;
+    width: 70%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+.custom-footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5% 2%;
+    margin-top: 15%;
+}
+.custom-footer-text {
+    margin: 2% 0;
+    font-size: 4vw;
+    /* Taille de police responsive */
+}
+.custom-social-icons {
+    margin-top: 2%;
+}
+.custom-social-link {
+    margin: 0 2%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 4vw;
+    /* Taille de police responsive */
+}
+.custom-social-link:hover {
+    color: #1e90ff;
+}
+.custom-social-icon {
+    width: 6%;
+    height: auto;
+    vertical-align: middle;
+}
+/* Styles pour le header et le footer */
+html {
+    text-align: center;
+    margin: auto;
+}
+header {
+    background-color: black;
+    height: 20vh;
+    /* Augmentation de la hauteur du header */
+    width: 100%;
+}
+.image {
+    float: left;
+    width: 15%;
+    /* Réduction de la largeur du logo */
+    height: 80%;
+    /* Réduction de la hauteur du logo */
+    margin-right: -15%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: white 3px solid;
+}
+.header_titre h1:hover {
+    transition: 1s;
+    scale: 1,2;
+}
+h1 {
+    margin-top: 0%;
+    color: white;
+}
+.menu .menu_ {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.menu_:hover {
+    background-color: #008000;
+}
+
+.langue {
+    width: 4%;
+    height: 2.5%;
+    float: right;
+    margin-right: 2%;
+}
+.content-all {
+    height: 100;
+    width: 70%;
+    margin: auto;
+}
+/* FOOTER */
+.custom-footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+}
+.custom-footer-text {
+    margin: 1% 0;
+    font-size: 100%;
+}
+.custom-social-icons {
+    margin-top: 1%;
+}
+.custom-social-link {
+    margin: 0 1%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8%;
+}
+.custom-social-link:hover {
+    color: #1e90ff;
+}
+.custom-social-icon {
+    width: 2.4%;
+    height: 2.4%;
+    vertical-align: middle;
+} 
+
+/* Style pour cacher le menu par défaut */
+.menu nav {
+    opacity: 0;
+    visibility: hidden; /* Cache le menu par défaut */
+    transform: translateY(-20px); /* Déplace le menu au-dessus de l'écran */
+    transition: opacity 1.2s ease, transform 1.2s ease, visibility 0s 1.2s; /* Animations avec un délai pour la visibilité */
+}
+
+/* Style pour le bouton du menu hamburger */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2.5vh; /* Ajuste selon la taille souhaitée */
+    color: white;
+    margin-top: 1%;
+    margin-left: 13%;
+}
+
+/* Cacher la checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+/* Afficher le menu lorsque la checkbox est cochée */
+input[type=checkbox]:checked ~ .menu nav {
+    opacity: 1;
+    visibility: visible; /* Le menu devient visible */
+    transform: translateY(0); /* Le menu se déplace vers sa position normale */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition sans délai */
+}
+
+/* Style du menu */
+.menu_ {
+    display: block;
+    padding: 1.5vh 2vw; /* Ajuste selon la taille souhaitée */
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition fluide sur le changement de couleur */
+}
+
+/* Changer la couleur de fond du menu au survol */
+.menu_:hover {
+    background-color: green; /* Changer la couleur au survol */
+}
+
+/* Style spécifique du menu avec fond sombre */
+.menu_ {
+    background-color: black;
+}
+
+/* Option pour élargir le menu */
+.menu_ {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.img_arbitre{
+    width: 30%;
+}
+
+.img_pele{
+    width: 30%; 
+    height: 10%;
+}
+
+.img_bresil{
+    width: 35%;
+    height: 30%; 
+}
+
+.img_frappe{
+    width: 30%;
+}
+
+.img_marche{
+    width: 40%; 
+    height: 40%;
+}
+
+@media only screen and (max-width: 425px){
+    h1{
+        font-size: 90%;
+
+    }
+    .image{
+        width:20%;
+        height: 40%;
+    }
+    
+    .menu_{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 90%;
+    }
+
+    .custom-social-icon{
+        width: 10%;
+    }
+    
+    .img_pele, .img_arbitre, .img_bresil, .img_frappe, .img_marche{
+        float: none;
+        width: 100%;
+    }
+
+    .langue{
+        width: 10%;
+    }
+}

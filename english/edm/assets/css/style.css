@@ -1,0 +1,341 @@
+body {
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.content-all{
+    width: 80%;
+}
+
+.titre {
+    text-align: center;
+    font-size: 145%;
+    text-decoration: underline;
+}
+
+.texte_un {
+    font-size: 18px;
+    width: 80%; /* 1000px / 1250px (largeur de la page) */
+    margin: auto;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.texte_deux {
+    font-size: 18px;
+    width: 80%; /* 1000px / 1250px (largeur de la page) */
+    margin: auto;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.texte_trois {
+    font-size: 130%;
+    text-decoration: underline;
+    letter-spacing: 0.3px;
+    text-align: center;
+    width: 96%; /* 1200px / 1250px (largeur de la page) */
+    margin: auto;
+}
+
+.img_stats {
+    float: left;
+}
+
+.age, .diplome, .niveau_de_vie {
+    font-size: 90%;
+    letter-spacing: 0.3px;
+    margin-left: 20%; /* 550px / 1250px (largeur de la page) */
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.age:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+
+.diplome:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+.niveau_de_vie:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+.insee {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.moyens {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.sport {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.prix {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.marche {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.paddle {
+    font-size: 118%;
+    letter-spacing: 0.3px;
+    margin: auto;
+    width: 88%; /* 1100px / 1250px (largeur de la page) */
+    text-align: center;
+}
+
+.img_paddle {
+    float: right;
+    width: 30%;
+}
+
+.Jeux_Olympique {
+    font-size: 110%;
+    letter-spacing: 0.3px;
+    margin-right: 68%; /* 850px / 1250px (largeur de la page) */
+    width: 56%; /* 700px / 1250px (largeur de la page) */
+}
+
+.Jeux_Olympique:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+.separator {
+    border-top: black 2px solid;
+    width: 40%; /* 500px / 1250px (largeur de la page) */
+    margin: auto;
+    margin-top: 10%;
+}
+
+/* Styles pour le header et le footer */
+html {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+header {
+    background-color: black;
+    height: 20vh; /* Augmentation de la hauteur du header*/
+    width: 100%;
+}
+
+.image {
+    float: left;
+    width: 15%; /* Réduction de la largeur du logo */
+    height:80%; /* Réduction de la hauteur du logo */
+    margin-right: -15%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: white 3px solid;
+}
+
+.header_titre h1:hover {
+    transition: 1s;
+    scale: 1,2 ;
+}
+
+h1 {
+    margin-top: 0%;
+    color: white;
+}
+
+.menu .menu_ {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu_:hover {
+    background-color: #008000;
+}
+
+.langue {
+    width: 4%;
+    height: 2.5%;
+    float: right;
+    margin-right: 2%;
+}
+
+.content-all{
+    height: 100;
+    width: 70%;
+    margin: auto;
+}
+
+/* FOOTER */
+.custom-footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+}
+
+.custom-footer-text {
+    margin: 1% 0;
+    font-size: 100%;
+}
+
+.custom-social-icons {
+    margin-top: 1%;
+}
+
+.custom-social-link {
+    margin: 0 1%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8%;
+}
+
+.custom-social-link:hover {
+    color: #1e90ff;
+}
+
+.custom-social-icon {
+    width: 2.4%;
+    height: 2.4%;
+    vertical-align: middle;
+}
+
+/* Style pour cacher le menu par défaut */
+.menu nav {
+    opacity: 0;
+    visibility: hidden; /* Cache le menu par défaut */
+    transform: translateY(-20px); /* Déplace le menu au-dessus de l'écran */
+    transition: opacity 1.2s ease, transform 1.2s ease, visibility 0s 1.2s; /* Animations avec un délai pour la visibilité */
+}
+
+/* Style pour le bouton du menu hamburger */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2.5vh; /* Ajuste selon la taille souhaitée */
+    color: white;
+    margin-top: -2%;
+    margin-right: 1%;
+}
+
+/* Cacher la checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+/* Afficher le menu lorsque la checkbox est cochée */
+input[type=checkbox]:checked ~ .menu nav {
+    opacity: 1;
+    visibility: visible; /* Le menu devient visible */
+    transform: translateY(0); /* Le menu se déplace vers sa position normale */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* Transition sans délai */
+}
+
+/* Style du menu */
+.menu_ {
+    display: block;
+    padding: 1.5vh 2vw; /* Ajuste selon la taille souhaitée */
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transition fluide sur le changement de couleur */
+}
+
+/* Changer la couleur de fond du menu au survol */
+.menu_:hover {
+    background-color: green; /* Changer la couleur au survol */
+}
+
+/* Style spécifique du menu avec fond sombre */
+.menu_ {
+    background-color: #111;
+}
+
+/* Option pour élargir le menu */
+.menu_ {
+    width: 30%;
+    margin-left: 35%;
+}
+
+
+@media only screen and (max-width: 425px){
+    body{
+        text-align: center;
+        float: center;
+       }
+       
+        h1{
+            font-size: 90%;
+    
+        }
+        .image{
+            width:20%;
+            height: 40%;
+        }
+        
+        .menu_{
+            width: 50%;
+            margin-left: 25%;
+            font-size: 90%;
+        }
+    
+        .custom-social-icon{
+            width: 10%;
+        }
+    
+    .img_stats{
+        width: 90%;
+        float: none;
+    }
+
+    .titre{
+        float: none;
+    }
+
+    .age, .diplome, .niveau_de_vie{
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .img_paddle{
+        float: none;
+        width: 80%;
+    }
+
+    .Jeux_Olympique{
+        margin-left: 25%;
+        text-align: center;
+    }
+}
